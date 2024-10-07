@@ -8,6 +8,6 @@ import { AdditivesController } from './additive.controller'
   imports: [SequelizeModule.forFeature([Additive])],
   providers: [AdditivesService],
   controllers: [AdditivesController],
-  exports: [AdditivesService],
+  // exports: [AdditivesService],
 })
 export class AdditivesModule {}
