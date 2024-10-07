@@ -14,15 +14,6 @@ export class AdditivesService {
     return 'Hello World!'
   }
 
-  async findOne(id: number): Promise<Additive> {
-    return this.additiveModel.findOne({
-      where: {
-        id,
-        companyId: 1,
-      },
-    })
-  }
-
   async findManyByDateRange(
     startDate: string,
     endDate: string,
